@@ -1,0 +1,16 @@
+---
+# defaults file for role-lxc-kitchen
+packer_version: "0.0.1"
+user: agalan
+
+template: ubuntu
+version: xenial
+
+containers:
+  - name: nodejs
+    template: ubuntu
+    version: xenial
+
+  - name: desk
+    template: ubuntu
+    version: xenial
