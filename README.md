@@ -1,2 +1,2 @@
-# lxc-kitchen
-An ansible role repository to fast fail
+# ml trader
+These are ansible playbooks to create machine learning infraestructure
