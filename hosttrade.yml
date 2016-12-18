@@ -1,0 +1,14 @@
+- hosts: localhost
+  become: true
+  vars:
+    country: cn
+  roles:
+   - { role: lxc-kitchen , name: "desk3",  release: "xenial", service: nodejs, user_bot: agalan, user_botgid: 1000,  startauto: 0, destroy: no }
+   - { role: lxc-kitchen , name: "desk2",  release: "xenial", service: nodejs, user_bot: agalan, user_botgid: 1000,  startauto: 1, destroy: no }
+  tags: hosttrade
+
+#
+# - hosts: desk2.lxc
+#   become_user: agalan
+#   tasks:
+#       - raw: sudo apt install python-simplejson
